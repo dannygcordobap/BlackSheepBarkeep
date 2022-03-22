@@ -1,0 +1,11 @@
+findrecipesonlywith.txt
+mongoimportCommand.txt
+
+rawDBDataBuild/
+
+.env
+
+node_modules/
+package-lock.json
+
+frontend/build/
