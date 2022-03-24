@@ -42,6 +42,11 @@ export default class DrinkDAO {
                                 }
                             }
                         }
+                    },
+                    {
+                        "$sort": {
+                            "Name": 1
+                        }
                     }
                 ]
             } else if ("category" in filters) {
@@ -79,7 +84,7 @@ export default class DrinkDAO {
             if (pipeline) {
                 cursor = await drink.aggregate(pipeline)
             } else {
-                cursor = await drink.find(query)
+                cursor = await drink.find(query).sort({"Name": 1})
             }
         } catch (e) {
             console.error(`Unable to complete find command: ${e}`)
