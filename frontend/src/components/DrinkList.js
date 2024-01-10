@@ -16,7 +16,7 @@ import { Box, Divider, IconButton, MenuItem, OutlinedInput, Select, Tab, Tabs, T
 function DrinkList() {
   const [drinks, setDrinks] = useState([]);
   const [searchName, setSearchName] = useState("");
-  const [searchCategory, setSearchCategory] = useState("");
+  const [searchCategory, setSearchCategory] = useState([]);
   const [searchIngredients, setSearchIngredients] = useState([]);
   const [searchExclusivity, setSearchExclusivity] = useState(false);
   const [ingredients, setIngredients] = useState([]);
